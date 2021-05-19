@@ -6,7 +6,7 @@ import { Header } from '../header';
 
 export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
     <article>
-        <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
+        <Header user={user} onLogin={() => { alert("login") }} onLogout={() => { alert("logout") }} onCreateAccount={() => { alert("onCreateAccount") }} />
 
         <Section>
             <h2>Pages in Storybook</h2>
